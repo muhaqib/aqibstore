@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aqib Store</title>
+
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Feather Icon -->
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- my style -->
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">aqib<span>store</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home">home</a>
+        <a href="#about">tentang kami</a>
+        <a href="#menu">menu</a>
+        <a href="#contact">kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shop"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Hero Section Start-->
+
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Buat Rumah Anda Terang <span>Bersama Kami</span></h1>
+        <p>
+          Kami menyediakan berbagai jenis lampu berkualitas tinggi untuk
+          kebutuhan rumah, kantor, toko, hingga industri. Temukan produk terbaik
+          dengan harga bersaing dan pelayanan ramah dari kami.
+        </p>
+        <a href="#" class="cta">beli Sekarang</a>
+      </main>
+    </section>
+    <!-- Hero Section End-->
+
+    <!-- About Section Start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="tentang.png" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih kami</h3>
+          <p>
+            Aqib Store adalah penyedia solusi pencahayaan terpercaya sejak 2015.
+            Kami berkomitmen memberikan produk lampu berkualitas tinggi dari
+            merek-merek ternama, mulai dari lampu LED hemat energi, lampu
+            gantung, lampu dinding, hingga lampu taman
+          </p>
+          <p>- Produk Berkualitas</p>
+          <p>- Pengiriman Cepat & Aman</p>
+          <p>- Konsultasi Gratis pemilihan lampu</p>
+          <p>- Terpercaya & Amanah</p>
+          <p>
+            Kami percaya bahwa pencahayaan yang baik bisa mengubah suasana dan
+            meningkatkan kualitas hidup.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end -->
+    <!--Menu Section start-->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Kami</h2>
+      <p>Temukan berbagai pilihan lampu sesuai kebutuhan Anda</p>
+      <div class="row">
+        <div class="menu-card">
+          <img src="menu/1.png" alt="Night Lamp" />
+          <h3 class="menu-card-title">- Night Lamp -</h3>
+          <p class="menu-card-price">Start For 20K</p>
+        </div>
+        <div class="menu-card">
+          <img src="menu/2.png" alt="Aestetic Lamp" />
+          <h3 class="menu-card-title">- Aestetic Lamp -</h3>
+          <p class="menu-card-price">Start For 60K</p>
+        </div>
+        <div class="menu-card">
+          <img src="menu/3.png" alt="Arabic Lamp" />
+          <h3 class="menu-card-title">- Arabic Lamp -</h3>
+          <p class="menu-card-price">Start For 100K</p>
+        </div>
+        <div class="menu-card">
+          <img src="menu/4.png" alt="Traditional Lamp" />
+          <h3 class="menu-card-title">- Traditional Lamp -</h3>
+          <p class="menu-card-price">Start For 90K</p>
+        </div>
+      </div>
+    </section>
+    <!--Menu Section end-->
+    <!--Kontak Section Start-->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>kami siap menerima pesanan anda, silahkan hubungi kami sekarang</p>
+      <div class="row">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63378.78104241058!2d109.1183411!3d-6.8697653999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9df95633e29%3A0xba923dd45f2aac0!2sKota%20Tegal%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1749436176422!5m2!1sid!2sid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <form onsubmit="sendToWhatsApp(); return false;">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" id="nama" placeholder="Nama" required />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" id="nohp" placeholder="No HP" required />
+          </div>
+          <div class="input-group">
+            <i data-feather="message-square"></i>
+            <input type="text" id="pesan" placeholder="Pesan Anda" required />
+          </div>
+          <button type="submit" class="btn">Kirim Pesan</button>
+      </div>
+    </section>
+    <!--Kontak Section end-->
+    <!--Footer start-->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="#"><i data-feather="youtube"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <div class="credit">
+        <p>
+          Created by <a href="https://muhaqib.my.id">muhaqib</a>.| &copy;2025
+        </p>
+      </div>
+    </footer>
+    <!--Footer start-->
+    <!-- feather Icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!--my Javascript-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
